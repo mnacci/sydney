@@ -442,8 +442,8 @@
         React.useEffect(() => {
             setUserInputTokens(enc.encode(userInput).length)
         }, [userInput])
-        const [enterMode, setEnterMode] = React.useState('enter')
-        const [locale, setLocale] = React.useState('zh-CN')
+        const [enterMode, setEnterMode] = React.useState('ctrl-enter')
+        const [locale, setLocale] = React.useState('en-US')
         const [responding, setResponding] = React.useState(false)
         React.useEffect(() => {
             setContextTokens(enc.encode(formatPreviousMessages(previousMessages)).length);
